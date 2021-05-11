@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Image Upload</title>
+      <link rel="stylesheet" href="assets/css/master.css">
+      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  </head>
+  <body>
+      <div class="card">
+          <h1>Image Upload</h1>
+          <h2>Select an image</h2>
+          <form action="#">
+            <div class="input-file-container">  
+              <input class="input-file" id="current_images" type="file" multiple>
+              <label tabindex="0" for="current_images" class="input-file-trigger">Select a file</label>
+            </div>
+            <div class="input-file-container" style="margin-top:10px;">  
+              <button class="input-file" id="submit-image"></button>
+              <label tabindex="0" class="input-file-trigger" id="submit-label" for="submit-image" style="white-space: nowrap; height: 17px;">Upload Image</label>
+              <div id="addLoader"></div>
+            </div>
+            <div style="margin-top:40px;">
+              <h3 class="label" hidden></h3>    
+            </div>
+            <p class="file-return"></p>
+          </form>
+          <p class="txtcenter">Check console for result</p>
+          <script type="text/javascript" src="assets/js/upload.js"></script>
+      </div>
+  </body>
+</html>
